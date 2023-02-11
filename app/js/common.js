@@ -175,7 +175,6 @@ function startBestsellers() {
                 slidesPerView: 2,
                 slidesPerGroup: 1,
                 speed: 600,
-                centeredSlides: true,
                 navigation: {
                     nextEl: sldNext,
                     prevEl: sldPrev,

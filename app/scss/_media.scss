@@ -1,4 +1,59 @@
+@media screen and (max-width: 1700px) {
+  .bestsellers .slider-btn {
+    left: 20px;
+
+    &.slider-btn--next {
+      right: 20px;
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
+  .single-product .top {
+    height: 321px;
+
+    .fav {
+      top: 12px;
+      right: 12px;
+    }
+
+    .tag {
+      font-size: 12px;
+      padding: 4px 10px;
+      top: 12px;
+      left: 12px;
+    }
+
+  }
+  .single-product .rating-stars {
+    margin-bottom: 10px;
+  }
+  .single-product .text {
+    span {
+      font-size: 12px;
+      line-height: 16px;
+
+      strong {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+      margin-top: 16px;
+      margin-bottom: 14px;
+    }
+  }
+  .bestsellers .slider-btn {
+    left: 8px;
+
+    &.slider-btn--next {
+      right: 8px;
+    }
+  }
   .single-popular .img {
     height: 202px;
   }
@@ -68,9 +123,41 @@
   .home-banner .dots {
     bottom: 20px;
   }
+  .new-products-line .new-img {
+    width: 630px;
+    height: 650px;
+  }
+  .new-products-line {
+    .single-product {
+      .top {
+        height: 340px;
+      }
+
+      .text {
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1025px) {
+
+  .bestsellers {
+    .dots {
+      display: flex;
+      margin-top: 35px;
+      margin-bottom: 30px;
+    }
+  }
+  .single-product .top {
+    height: 221px;
+  }
+  .single-product .top .tag {
+    z-index: 2;
+    font-size: 10px;
+  }
   .header {
     padding-top: 12px;
   }
@@ -97,6 +184,7 @@
 }
 
 @media screen and (max-width: 840px) {
+
   .header-search input {
     width: 180px;
   }
@@ -107,6 +195,32 @@
 
 
 @media screen and (max-width: 820px) {
+
+  .new-products-line .new-img {
+    width: 100%;
+    height: 450px;
+  }
+  .new-products-line {
+    flex-wrap: wrap;
+
+    .single-product {
+      width: calc(50% - 12px);
+
+      &:last-child {
+        display: flex;
+      }
+
+      .top {
+        height: 221px;
+      }
+
+      .text {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
   .lang {
     &:hover {
       ul {
@@ -685,10 +799,22 @@
   .single-popular {
     width: 100%;
   }
-
+  .new-products {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .new-products-line .single-product .text span {
+    font-size: 12px;
+  }
+  .new-products-line .new-img {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    margin-right: -24px;
+    height: 240px;
+    margin-bottom: 12px;
+  }
   .home-banner {
     height: auto;
 
@@ -789,6 +915,7 @@
   }
 
 }
+
 @media screen and (max-width: 340px) {
   .banner-text p {
     margin-bottom: 24px;
