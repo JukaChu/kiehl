@@ -39,6 +39,7 @@ controlLang();
 let firstSub = [...document.querySelectorAll('.menu-item-has-children > a')];
 let secondSub = [...document.querySelectorAll('.menu-sub > li > a')];
 let addressKey = [...document.querySelectorAll('.address-key')];
+let companyKey = [...document.querySelectorAll('.footer-company span')];
 
 function controlSubs() {
     if (firstSub.length) {
@@ -61,6 +62,13 @@ function controlSubs() {
                 e.stopPropagation();
                 e.preventDefault();
                 btn.closest('.address-block').classList.toggle('active');
+            })
+        });
+        companyKey.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                btn.closest('.footer-company').classList.toggle('active');
             })
         })
     }
